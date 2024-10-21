@@ -13,7 +13,7 @@ defineProps({
 </script>
 
 <template>
-  <div>
+  <div class="bg-white ">
     <div class="flex justify-between pb-5">
       <div>
         <span class="pb-2.5 block text-2xl font-semibold">Welcome, Mr Victor</span>

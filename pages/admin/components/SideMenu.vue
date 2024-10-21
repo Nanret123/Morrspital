@@ -7,10 +7,10 @@
     </div>
 
     <ul v-for="(item, index) in menuItems" :key="item.id" class="mb-2 pt-2">
-      <li class="text-grey-300 text-sm flex items-center gap-x-4 cursor-pointer p-2 hover: bg-light-white rounded-md">
+      <NuxtLink :to="item.link"  class="text-grey-300 text-sm flex items-center gap-x-4 cursor-pointer p-2 hover: bg-light-white rounded-md">
         <Icon :name="item.icon" style="color: black" class="text-2xl" />
         <h4 :class="['origin-left', hideText, 'text-sm']">{{ item.title }}</h4>
-      </li>
+      </NuxtLink>
     </ul>
   </div>
 </template>
